@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scaled=1.0">
+    <title>formulario de contacto</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f5f5, #79df79);
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(0, 0, 0);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1, 5rem;
+            color: #11a0cb;
+
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #dddddd;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #6a11cb;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border: radius 5px;
+            background: #1187cb;
+            color: #ffffff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0, 3s;
+        }
+
+        .form-group small {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.875rem;
+            color: #777777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="nombre">NOMBRE</label>
+                <input type="tex" id="nombre" name="nombre" placeholder="ingrese su nombre">
+            </div>
+            <div class="form-group">
+                 <label for="CORREO">MENSAJE</label>
+                <input type="email" id="CORREO" name="CORREO" placeholder="ingrese su correo">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">MENSAJE</label>
+                <input type="text" id="mensaje" name="mensaje" placeholder="ingrese su mensaje">
+            </div>
+            <div class="form-group">
+                <button type="submit">ENVIAR</button>
+            </div>
+            <small>SU INFORMACION ES CONFIDENCIAL</small>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
